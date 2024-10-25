@@ -275,7 +275,8 @@ body {
 }
 
 .certificate-body {
-  width: 300px;
+  width: 45vh;
+  height: 45vh;
   margin: 10px;
   overflow: hidden;
   border: 1px solid #ddd;
@@ -313,7 +314,7 @@ body {
 }
 
 .card {
-  width: 300px;
+  width: 45vh;
   height: 65vh;
   margin: 10px;
   overflow: hidden;
