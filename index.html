@@ -3,321 +3,251 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nagarjun</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/Logo.png">
-
-    <!-- Bootstrap CSS CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
-    <!-- Bootstrap JS CDN (optional, for dropdowns and other interactive components) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
-    <!-- External Styles and Templates -->
+    <title>Nagarjun T S - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/index.css">
     <script src="assets/js/index.js"></script>
 </head>
 <body>
-    <!-- Hero -->
-    <div class="hero-section">
-        <div class="shade-overlay"></div>
-        <div class="container">
-          <div class="hero-content">
-            <h1 class="display-4">
-              Hello, I'm
-              <span style="color: #f20d46">
-                Nagarjun T S</span>
-            </h1>
-            <p class="lead">This is my work in pixels</p>
-            <img src="https://cdn.shopify.com/s/files/1/2075/2531/t/56/assets/bouncingarrows-1674136865893.gif?v=1674136867" style="height: 120px;"/>
-          </div>
-        </div>
-      </div>
-    <!-- End Hero -->
-
-    <!-- NavBar -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-            <img src="/assets/img/Logo.png" class="navbar-img" alt="Logo"/>
-            <a class="navbar-brand" href="#">Nagarjun</a>
-            <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-            >
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#certifications">Certifications</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#experiences">Experiences</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="./Nagarjun.pdf" download="Nagarjun">Resume</a>
-                    </li>
-                </ul>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Nagarjun</div>
+            <div class="mobile-menu" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
     </nav>
-    <!-- End NavBar -->
-    
-    <!-- About -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="shaded-lines"></div>
-            <div class="heading">ABOUT</div>        
-            <div class="container-fluid p-0">
-                <div class="row no-gutters">
-                    <div class="col-md-6 section section-1">
-                        <img src="assets/img/Profile.png" class="profile-img" alt="Profile"/><br/>
-                        <p class="about-description" style="text-align: center;">An AI enthusiast with a strong foundation in Machine Learning, Data Science, and Cloud Computing, driven by a passion for leveraging technology to solve real world problems. I bring hands-on experience in building predictive models, data analysis, and deploying scalable cloud solutions, alongside expertise in web development. Always eager to learn and stay on the pulse of emerging trends in AI, cloud architecture, and data-driven decision-making.
-                        </p><br/><br/>
-                        
-                    </div>
-                    <div class="col-md-6 section section-1">
-                        <h2 class="about-heading">Education:</h2> 
-                            <p class="about-description">
-                                ◈ B.E. in Computer Science, Sri Siddhartha Institute of Technology <br/> &ensp; <i>CGPA: 7.4/10</i> <br/>
-                            </p>                                               
-                        <h2 class="about-heading" style="margin-top: 2%;">Technical Skills:</h2>
-                            <p class="about-description">
-                            ◈<b> Programming Languages: </b> Python, R, HTML, CSS, JavaScript, SQL, Kusto Query Language(KQL) <br/><br/>                         
-                            ◈<b> Machine Learning: </b><br/>
-                                &emsp; ➢ Classical Machine learning: <br> 
-                                &emsp;&emsp;&emsp; Regression: Linear, Logistic<br> 
-                                &emsp;&emsp;&emsp; Clustering: K-Means<br> 
-                                &emsp;&emsp;&emsp; Classification: Naive Bayes, SVM, Random Forest, Decision Tree<br/>
-                                &emsp; ➢ Deep learning: CNN, RNN, LSTMs <br/><br/>
-                            ◈<b> Data Science:</b> Data Cleaning, Data Engineering, ETL, Data Visualization, Natural Language Processing(NLP), Statistics, Time Series Analysis<br/><br/>
-                            ◈<b> Generative AI:</b> LLMs, Agents, Transformers, Responsible AI <br/><br/>
-                            ◈<b> Frameworks: </b> ReactJS, AngularJS, Flask, Django, TensorFlow, PyTorch, Scikit-Learn, Keras <br/><br/>                                             
-                            ◈<b> Databases: </b> PostgreSQL, MySQL, Firebase<br/><br/>                 
-                            ◈<b> Cloud Computing: </b> Microsoft Azure, Google Cloud Platform <br/><br/>                        
-                            </p>                       
-                    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hello, I'm <span class="gradient-text">Nagarjun T S</span></h1>
+            <p>AI Enthusiast | Data Scientist | Cloud Engineer</p>
+            <div class="scroll-indicator">
+                <i class="fas fa-chevron-down" style="font-size: 2rem; color: var(--primary);"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="profile-card">
+                <p style="line-height: 1.8;">An AI enthusiast with a strong foundation in Machine Learning, Data Science, and Cloud Computing, driven by a passion for leveraging technology to solve real world problems. I bring hands-on experience in building predictive models, data analysis, and deploying scalable cloud solutions.</p>
+                <h3 style="margin-top: 2rem; color: var(--primary);">Education</h3>
+                <p style="margin-top: 1rem;">B.E. in Computer Science<br>Sri Siddhartha Institute of Technology<br><em>CGPA: 7.4/10</em></p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <p>Python, R, HTML, CSS, JavaScript, SQL, KQL</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Machine Learning</h3>
+                    <p>Regression, Classification, Clustering, CNN, RNN, LSTMs</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Data Science</h3>
+                    <p>Data Engineering, ETL, Visualization, NLP, Time Series</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Cloud & Frameworks</h3>
+                    <p>Azure, GCP, React, Flask, TensorFlow, PyTorch</p>
                 </div>
             </div>
         </div>
     </section>
-    <!-- End About -->
 
-    <!-- Portfolio -->    
-    <section class="portfolio" id="portfolio">
-        <div class="shaded-lines"></div>
-        <h2> PORTFOLIO </h2>
-        <div class="filter">
-            <button class="filter-button active" data-filter="all">All</button>
-            <button class="filter-button" data-filter="datascience">Data Science & Machine Learning</button>
-            <button class="filter-button" data-filter="web">Website</button>
-            <button class="filter-button" data-filter="design">Web & Mobile App Design</button>
-            <button class="filter-button" data-filter="blockchain">Block Chain</button>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <h2 class="section-title">Portfolio</h2>
+        <div class="filter-buttons">
+            <button class="filter-btn active" onclick="filterProjects('all')">All</button>
+            <button class="filter-btn" onclick="filterProjects('datascience')">Data Science</button>
+            <button class="filter-btn" onclick="filterProjects('web')">Websites</button>
+            <button class="filter-btn" onclick="filterProjects('design')">Design</button>
+            <button class="filter-btn" onclick="filterProjects('blockchain')">Blockchain</button>
         </div>
-        <div class="projects">
-            <div class="project datascience">
-                <img src="assets/img/yolov9.png" alt="Data Science 1">
-                <h3>Yolov9 with custom dataset</h3>
-                <p class="filters"> Data Science & Machine Learning</p>
+        <div class="projects-grid">
+            <div class="project-card datascience">
+                <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400" alt="Project" class="project-img">
+                <div class="project-info">
+                    <h3>YOLOv9 Custom Dataset</h3>
+                    <span class="project-tag">Machine Learning</span>
+                </div>
             </div>
-            <!-- End Card -->
-            <div class="project datascience">
-                <img src="assets/img/AmazonReview.png" alt="Data Science 2">
-                <h3>Amazon Review Classification</h3>
-                <p class="filters"> Data Science & Machine Learning</p>
+            <div class="project-card datascience">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400" alt="Project" class="project-img">
+                <div class="project-info">
+                    <h3>Amazon Review Classification</h3>
+                    <span class="project-tag">NLP</span>
+                </div>
             </div>
-            <!-- End Card -->
-            <div class="project datascience">
-                <img src="assets/img/Venue.png" alt="Data Science 3">
-                <h3>Data Visualization - Venue Data</h3>
-                <p class="filters"> Data Science & Machine Learning</p>
+            <div class="project-card datascience">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400" alt="Project" class="project-img">
+                <div class="project-info">
+                    <h3>Venue Data Visualization</h3>
+                    <span class="project-tag">Data Science</span>
+                </div>
             </div>
-            <!-- End Card -->
-            <div class="project datascience">
-                <img src="assets/img/LeisureHubs.png" alt="Data Science 4">
-                <h3>Leisure hub detection & Recommendation of new store oppurtunities</h3>
-                <p class="filters"> Data Science & Machine Learning</p>
+            <div class="project-card datascience">
+                <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=400" alt="Project" class="project-img">
+                <div class="project-info">
+                    <h3>Leisure Hub Detection</h3>
+                    <span class="project-tag">Analytics</span>
+                </div>
             </div>
-            <!-- End Card -->            
-            <div class="project web">
-                <img src="assets/img/GosalaAgro.png" alt="Website 1">
-                <h3>Gosala Agro Products</h3>
-                <p class="filters"> Website </p>
-                <a href="https://sgagroproducts.com/" target="_blank" style="font-size: larger;">View Site</a>
+            <div class="project-card web">
+                <img src="https://images.unsplash.com/photo-1547394765-185e1e68f34e?w=400" alt="Project" class="project-img">
+                <div class="project-info">
+                    <h3>Gosala Agro Products</h3>
+                    <span class="project-tag">Web Development</span>
+                </div>
             </div>
-            <!-- End Card -->
-            <div class="project web">
-                <img src="assets/img/GreenSmaran.png" alt="Website 2">
-                <h3>Smaran Pyrolysis Technologies Pvt. Ltd.</h3>
-                <p class="filters"> Website </p>
-                <a href="https://greensmaran.com/" target="_blank" style="font-size: larger;">View Site</a>
+            <div class="project-card web">
+                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=400" alt="Project" class="project-img">
+                <div class="project-info">
+                    <h3>Smaran Pyrolysis Tech</h3>
+                    <span class="project-tag">Web Development</span>
+                </div>
             </div>
-            <!-- End Card -->
-            <div class="project web">
-                <img src="assets/img/BloodLives.png" alt="Website 3">
-                <h3>BloodLives - Connecting with potential blood donors</h3>
-                <p class="filters"> Website</p>
+            <div class="project-card web">
+                <img src="https://images.unsplash.com/photo-1615461066841-6116e61058f4?w=400" alt="Project" class="project-img">
+                <div class="project-info">
+                    <h3>BloodLives Platform</h3>
+                    <span class="project-tag">Web App</span>
+                </div>
             </div>
-            <!-- End Card -->
-            <div class="project web">
-                <img src="assets/img/FoodManagement.png" alt="Website 4">
-                <h3>Food Wastage Management System</h3>
-                <p class="filters"> Website</p>
+            <div class="project-card design">
+                <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400" alt="Project" class="project-img">
+                <div class="project-info">
+                    <h3>ChattersCrew</h3>
+                    <span class="project-tag">UI/UX Design</span>
+                </div>
             </div>
-            <!-- End Card -->
-            <div class="project web">
-                <img src="assets/img/MultiWebCam.png" alt="Website 5">
-                <h3>Multi-Webcam Access</h3>
-                <p class="filters"> Website</p>
+            <div class="project-card design">
+                <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?w=400" alt="Project" class="project-img">
+                <div class="project-info">
+                    <h3>CodeTero</h3>
+                    <span class="project-tag">App Design</span>
+                </div>
             </div>
-            <!-- End Card -->                  
-            <div class="project design">
-                <img src="assets/img/ChattersCrew.png" alt="Web and Mobile Application Designing 1"><br>
-                <h3>ChattersCrew</h3>
-                <p class="filters"> Web and Mobile Application Designing</p>
+            <div class="project-card blockchain">
+                <img src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=400" alt="Project" class="project-img">
+                <div class="project-info">
+                    <h3>Agricultural Supply Chain</h3>
+                    <span class="project-tag">Blockchain</span>
+                </div>
             </div>
-            <!-- End Card -->
-            <div class="project design">
-                <img src="assets/img/Codetero.png" alt="Web and Mobile Application Designing 2">
-                <h3>CodeTero</h3>
-                <p class="filters"> Web and Mobile Application Designing</p>
-            </div>
-            <!-- End Card -->
-            <div class="project blockchain">
-                <img src="assets/img/AgriculturalSupplychain.png" alt="Blockchain 1">
-                <h3>Agricultural Supply Chain</h3>
-                <p class="filters"> Blockchain</p>
-            </div>
-            <!-- End Card -->
         </div>
     </section>
-    <!-- End Portfolio -->
 
     <!-- Certifications -->
-    <section class="certifications" id="certifications">
-        <div class="shaded-lines"></div>
-        <h2> CERTIFICATIONS </h2>
-        <div class="certificate">
-            <div class="certificate-body">
-                <img src="assets/img/Microsoft.jpg" alt="Certificate 1" class="certificate-img">
-                <h3>Microsoft 365 Certified:<br/> Fundamentals</h3>
-                <p class="filters"> Date of Completion: <br/> 23rd February 2023</p>
-                <a href="https://learn.microsoft.com/api/credentials/share/en-us/NagarjunTS-08/B0545C1155126C11?sharingId=449DB553769BC78" target="_blank" style="font-size: larger;">Show Credentials</a>
+    <section id="certifications">
+        <h2 class="section-title">Certifications</h2>
+        <div class="cert-grid">
+            <div class="cert-card">
+                <i class="fab fa-microsoft cert-icon"></i>
+                <h3>Microsoft 365 Fundamentals</h3>
+                <p style="color: var(--gray); margin-top: 0.5rem;">February 2023</p>
             </div>
-            <!-- End Card -->
-            <div class="certificate-body">
-                <img src="assets/img/Microsoft.jpg" alt="Certificate 2" class="certificate-img">
-                <h3>Microsoft Certified: <br/> Azure Fundamentals</h3>
-                <p class="filters"> Date of Completion: <br/> 12th June 2023</p>
-                <a href="https://learn.microsoft.com/api/credentials/share/en-us/NagarjunTS-08/4BA65BA09AD7124A?sharingId=449DB553769BC78" target="_blank" style="font-size: larger;">Show Credentials</a>
+            <div class="cert-card">
+                <i class="fab fa-microsoft cert-icon"></i>
+                <h3>Azure Fundamentals</h3>
+                <p style="color: var(--gray); margin-top: 0.5rem;">June 2023</p>
             </div>
-            <!-- End Card -->
-            <div class="certificate-body">
-                <img src="assets/img/Microsoft.jpg" alt="Certificate 3" class="certificate-img">
-                <h3>Microsoft Certified: <br/> Azure AI Fundamentals</h3>
-                <p class="filters"> Date of Completion: <br/> 30th September 2023</p>
-                <a href="https://learn.microsoft.com/api/credentials/share/en-us/NagarjunTS-08/BCBAB34487AA9DBC?sharingId=449DB553769BC78" target="_blank" style="font-size: larger;">Show Credentials</a>
+            <div class="cert-card">
+                <i class="fab fa-microsoft cert-icon"></i>
+                <h3>Azure AI Fundamentals</h3>
+                <p style="color: var(--gray); margin-top: 0.5rem;">September 2023</p>
             </div>
-            <!-- End Card -->
-            <div class="certificate-body">
-                <img src="assets/img/Google.jpg" alt="Certificate 3" class="certificate-img">
-                <h3>Google Certified: <br/> Introduction to Generative AI</h3>
-                <p class="filters"> Date of Completion: <br/> 13th May 2024</p>
-                <a href="https://www.cloudskillsboost.google/public_profiles/486a5267-f19f-4df7-9da5-a0888708606a/badges/8992189" target="_blank" style="font-size: larger;">Show Credentials</a>
+            <div class="cert-card">
+                <i class="fab fa-google cert-icon"></i>
+                <h3>Generative AI Intro</h3>
+                <p style="color: var(--gray); margin-top: 0.5rem;">May 2024</p>
             </div>
-            <div class="certificate-body">
-                <img src="assets/img/Google.jpg" alt="Certificate 3" class="certificate-img">
-                <h3>Google Certified: <br/> Intorduction to Large Language Models</h3>
-                <p class="filters"> Date of Completion: <br/> 11th June 2024</p>
-                <a href="https://www.cloudskillsboost.google/public_profiles/486a5267-f19f-4df7-9da5-a0888708606a/badges/9404889" target="_blank" style="font-size: larger;">Show Credentials</a>
+            <div class="cert-card">
+                <i class="fab fa-google cert-icon"></i>
+                <h3>Large Language Models</h3>
+                <p style="color: var(--gray); margin-top: 0.5rem;">June 2024</p>
             </div>
-            <!-- End Card -->
-            <!-- End Card -->
-            <div class="certificate-body">
-                <img src="assets/img/Google.jpg" alt="Certificate 3" class="certificate-img">
-                <h3>Google Certified: <br/> Introduction to Responsible AI</h3>
-                <p class="filters"> Date of Completion: <br/> 26th September 2024</p>
-                <a href="https://www.cloudskillsboost.google/public_profiles/486a5267-f19f-4df7-9da5-a0888708606a/badges/11694118" target="_blank" style="font-size: larger;">Show Credentials</a>
+            <div class="cert-card">
+                <i class="fab fa-google cert-icon"></i>
+                <h3>Responsible AI</h3>
+                <p style="color: var(--gray); margin-top: 0.5rem;">September 2024</p>
             </div>
-            <!-- End Card -->
-            <div class="certificate-body">
-                <img src="assets/img/LTI.png" alt="Certificate 3" class="certificate-img">
-                <h3>LTIMindtree: <br/> Generative AI Foundation Course</h3>
-                <p class="filters"> Date of Completion: <br/> 29th August 2024</p>
-                <!-- <a href="" target="_blank" style="font-size: larger;">Show Credentials</a> -->
-            </div>
-            <!-- End Card -->
-    </section>
-    <!-- End Certifications -->
-
-    <!-- Experiences -->
-    <section class="experiences" id="experiences">
-        <div class="shaded-lines"></div>
-        <h2> EXPERIENCES </h2>
-        <div class="cards">
-            <div class="card">
-                <img src="assets/img/Rabtul.png" alt="Experience 1" class="card-img">
-                <h3>Rabtul Pvt. Ltd.</h3>
-                <p class="card-description"> Web Developer Associate <br/> Frontend Developer </p>
-                <p class="card-description"> <b>Duration:</b> <br/>September to December, 2021</p>
-                <a href="https://rabtul.in/" target="_blank" style="font-size: larger;">View Company Info</a>
-            </div>
-            <!-- End Card -->
-            <div class="card">
-                <img src="assets/img/LTIMindtree.png" class="card-img">
-                <h3>LTIMindtree</h3>
-                <p class="card-description"> Consultant - Cloud Infrastructure Engineer <br/> Microsoft Azure HDInsight</p>
-                <p class="card-description"> <b>Duration:</b> <br/>March 2022 to Present</p>
-                <a href="https://www.ltimindtree.com/" target="_blank" style="font-size: larger;">View Company Info</a>
-            </div>
-            <!-- End Card -->
         </div>
     </section>
-    <!-- End Experiences -->
+
+    <!-- Experience -->
+    <section id="experience">
+        <h2 class="section-title">Experience</h2>
+        <div class="exp-timeline">
+            
+            <div class="exp-card">
+                <h3 style="color: var(--primary);">LTIMindtree</h3>
+                <p style="font-weight: 600; margin: 0.5rem 0;">Consultant - Cloud Infrastructure Engineer</p>
+                <p style="color: var(--gray);">March 2022 - Present</p>
+                <p style="margin-top: 1rem;">Microsoft Azure HDInsight specialist focusing on cloud infrastructure and big data solutions.</p>
+            </div>
+            <div class="exp-card">
+                <h3 style="color: var(--primary);">Rabtul Pvt. Ltd.</h3>
+                <p style="font-weight: 600; margin: 0.5rem 0;">Web Developer Associate</p>
+                <p style="color: var(--gray);">September - December 2021</p>
+                <p style="margin-top: 1rem;">Frontend development focusing on responsive web applications.</p>
+            </div>
+        </div>
+    </section>
 
     <!-- Contact -->
-    <section class="contact" id="contact">
-        <div class="shaded-lines"></div>
-        <h2> CONTACT </h2>
+    <section id="contact">
+        <h2 class="section-title">Get In Touch</h2>
         <div class="contact-content">
-            <p>You can reach out to me here:</p>
-            <div class="contact-details">
-                <p><i class="fa fa-phone"></i> <a href="tel:+918217721298">+91 8217721298</a></p>
-                <p><i class="fa fa-envelope"></i> <a href="mailto:nagarjunts008@gmail.com">nagarjunts008@gmail.com</a></p>
-                <div class="social-links">
-                    <a href="https://www.facebook.com/nagarjun.ts" target="_blank"><i class="fab fa-facebook"></i></a>
-                    <a href="https://twitter.com/nagarjunts008" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/nagarjun.ts/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://github.com/nagarjunts008" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://learn.microsoft.com/en-us/users/nagarjunts-08/" target="_blank"><i class="fab fa-microsoft"></i></a>
-                    <a href="https://www.linkedin.com/in/nagarjun-ts/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+91 8217721298</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>nagarjunts008@gmail.com</span>
                 </div>
             </div>
-        </div> 
-    </section>
-    <footer class="footer">
-        <div class="container">
-            <p>Nagarjun Portfolio - November 2023</p>
+            <div class="social-links">
+                <a href="https://github.com/nagarjunts008" class="social-link" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/nagarjun-ts/" class="social-link" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://twitter.com/nagarjunts008" class="social-link" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/nagarjun.ts/" class="social-link" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/nagarjun.ts" class="social-link" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </div>
         </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Nagarjun T S. All rights reserved.</p>
     </footer>
-    <!-- End Contact -->
 </body>
 </html>
